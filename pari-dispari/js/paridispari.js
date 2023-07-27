@@ -20,7 +20,7 @@ console.log("Numero dell'Utente: " + userNumber );
 
 //* Tramite funzione genero randomicamente un numero compreso tra 1 a 5
 function randomNumber(min, max) {
-    const radomPcNumber = Math.floor(Math.random () * ((max + 1) - min)) + min;
+    const radomPcNumber = (Math.floor(Math.random () * ((max + 1) - min)) + min);
     return radomPcNumber
 }
 

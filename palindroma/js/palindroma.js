@@ -2,27 +2,27 @@
 let userWord = prompt('Inserisci una parola');
 
 //* Creo una funzione di nome Palindorma
-function Palindroma(){
+function Palindroma(word){
 
     //* dichiaro una variabile d'appoggio
     let result = '';
     
     //* Converto la parola scritta dall'utente tutto in minuscolo
-    userWord = userWord.toLowerCase();
+    word = word.toLowerCase();
 
     //* Tolgo gli spazi
-    userWord = userWord.trim(); 
+    word = word.trim(); 
     
     //* Creo il ciclo WHILE
 
     //* Inizializzo la i
-    let i = userWord.length - 1;
+    let i = word.length - 1;
 
     //* Condizone while
     while( i >= 0) {
         
         //* Aggiungo alla variabile "result" useranswer[i]
-        result += userWord[i];
+        result += word[i];
         console.log(result);
 
         //* Decremento la i
@@ -30,7 +30,7 @@ function Palindroma(){
     }
     
     //* SE useranswer è uguale a result
-    if ( userWord === result) {
+    if ( word === result) {
         //* la parola è palindroma
         console.log('La parola è palindroma')
         //* la parola non è palindroma
@@ -41,4 +41,4 @@ function Palindroma(){
 }
 
 //* Invoca la funzione
-Palindroma()
+Palindroma(userWord)
