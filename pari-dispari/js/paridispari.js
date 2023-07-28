@@ -1,5 +1,5 @@
 //* Chiedo all'Utente di scegliere tra pari e dispari
-let userChoice = prompt('Pari o dispari?');
+let userChoice = prompt('Pari o dispari?', 'Pari').trim().toLowerCase;
     
 //* Ciclo While per far accettare solo i due valori necessari
 while (userChoice !== 'pari' && userChoice !== 'dispari') {
